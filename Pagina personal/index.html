@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conoce mi trabajo, sígueme en redes y apóyame en Ko-fi." />
+    <title>Kiara | Creador/a</title>
+    <style>
+      :root {
+        --ink: #f9f7f2;
+        --muted: #c7c1b9;
+        --surface: rgba(255, 255, 255, 0.08);
+        --line: rgba(255, 255, 255, 0.14);
+        --accent: #ffb84d;
+        --accent-dark: #1c1424;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 32px 20px;
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at 10% 10%, #9a3c70 0, transparent 31%),
+          radial-gradient(circle at 88% 80%, #166b79 0, transparent 32%),
+          #17131f;
+      }
+
+      main {
+        width: min(100%, 580px);
+        padding: clamp(28px, 6vw, 48px);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        text-align: center;
+        background: rgba(19, 16, 27, 0.7);
+        backdrop-filter: blur(18px);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+      }
+
+      .avatar {
+        width: 94px;
+        aspect-ratio: 1;
+        margin: 0 auto 18px;
+        border: 2px solid rgba(255, 255, 255, 0.52);
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 35%;
+        background: #f7eeea;
+      }
+
+      h1 { margin: 0; font-size: clamp(2rem, 7vw, 3rem); letter-spacing: -0.06em; }
+      .tagline { max-width: 400px; margin: 14px auto 30px; color: var(--muted); font-size: 1.05rem; line-height: 1.55; }
+
+      .links { display: grid; gap: 12px; }
+      a {
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 20px;
+        border: 1px solid var(--line);
+        border-radius: 15px;
+        color: inherit;
+        font-weight: 700;
+        text-decoration: none;
+        background: var(--surface);
+        transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+      }
+
+      a:hover, a:focus-visible { transform: translateY(-3px); border-color: var(--accent); background: rgba(255, 255, 255, 0.15); }
+      a:focus-visible { outline: 3px solid rgba(255, 184, 77, 0.45); outline-offset: 3px; }
+
+      details { border: 1px solid var(--line); border-radius: 15px; background: var(--surface); overflow: hidden; }
+      summary {
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 20px;
+        cursor: pointer;
+        font-weight: 700;
+        list-style: none;
+      }
+      summary::-webkit-details-marker { display: none; }
+      summary::after { content: "+"; color: var(--accent); font-size: 1.3rem; }
+      details[open] summary { border-bottom: 1px solid var(--line); }
+      details[open] summary::after { content: "−"; }
+      .contact-options { display: grid; gap: 8px; padding: 12px; }
+      .contact-options a { min-height: 48px; font-size: 0.92rem; }
+
+      /* El widget de Ko-fi genera su propio enlace: lo igualamos al resto de botones. */
+      .kofi-widget,
+      .kofi-widget > div { width: 100%; }
+
+      .kofi-widget .kofi-button {
+        width: 100% !important;
+        min-height: 58px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 14px 20px !important;
+        border: 1px solid transparent !important;
+        border-radius: 15px !important;
+        color: #241725 !important;
+        font: 700 1rem/1.2 Inter, ui-sans-serif, system-ui, sans-serif !important;
+        text-decoration: none !important;
+        text-shadow: none !important;
+        background: linear-gradient(105deg, #ffbf53, #ff8776) !important;
+        box-shadow: 0 10px 26px rgba(255, 144, 88, 0.2) !important;
+        transition: transform 160ms ease, background 160ms ease !important;
+      }
+
+      .kofi-widget .kofi-button:hover,
+      .kofi-widget .kofi-button:focus-visible {
+        transform: translateY(-3px) !important;
+        background: linear-gradient(105deg, #ffd06f, #ff9f91) !important;
+      }
+
+      footer { margin-top: 26px; color: var(--muted); font-size: 0.82rem; }
+      .heart { color: #ff9d8f; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="avatar" src="perfil.jpg" alt="Ilustración de perfil de Kiara" />
+      <h1>Kiara</h1>
+      <p class="tagline">Comparto mi trabajo, mis ideas y los proyectos que me entusiasman. Gracias por pasarte!.</p>
+
+      <nav class="links" aria-label="Mis enlaces">
+        <a href="https://instagram.com/sh1r0.art" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.patreon.com/sh1r0art/posts/bienvenid-mi-169612217?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link" target="_blank" rel="noopener noreferrer">Patreon</a>
+        <details>
+          <summary>Contacta conmigo</summary>
+          <div class="contact-options">
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=granadoskiara1c@gmail.com" target="_blank" rel="noopener noreferrer">✉ Escríbeme por Gmail</a>
+            <a href="https://wa.me/34640206022" target="_blank" rel="noopener noreferrer">◉ Escríbeme por WhatsApp</a>
+          </div>
+        </details>
+        <div class="kofi-widget" aria-label="Apoya mi trabajo en Ko-fi">
+          <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+          <script type="text/javascript">
+            kofiwidget2.init('Apoya mi trabajo en Ko-fi', '#72a4f2', 'N0B62720P6');
+            kofiwidget2.draw();
+          </script>
+        </div>
+      </nav>
+
+      <footer>Gracias por apoyar el trabajo independiente</footer>
+    </main>
+  </body>
+</html>
